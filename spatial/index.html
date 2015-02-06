@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>github.com/chbrown: Spatial Perspective</title>
+  <link href="../site.css" rel="stylesheet" type="text/css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY5L1jgFP2dMeWEAlsw_t29TRgy7adDLc&sensor=true"></script>
+  <script src="../lib/angular.js"></script>
+  <script src="../lib/ngStorage.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-app="app" ng-controller="ctrl">
+  <div style="height: 70%">
+    <google-map zoom="zoom" lon="map1.lon" lat="map1.lat"></google-map>
+    <google-map zoom="zoom" lon="map2.lon" lat="map2.lat"></google-map>
+  </div>
+
+  <div>
+    <ul>
+      <li>Map 1 (lon/lat): {{map1.lon | number}} / {{map1.lat | number}}</li>
+      <li>Map 2 (lon/lat): {{map2.lon | number}} / {{map2.lat | number}}</li>
+      <li>Zoom: {{zoom}}</li>
+    </ul>
+  </div>
+</body>
