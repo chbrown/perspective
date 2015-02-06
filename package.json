@@ -1,0 +1,15 @@
+{
+  "name": "perspective",
+  "version": "0.1.0",
+  "description": "Keeping disproportionate things in perspective",
+  "private": true,
+  "author": "Christopher Brown <io@henrian.com>",
+  "staticPattern": "lib/{file}",
+  "staticDependencies": {
+    "angular": "*",
+    "angular-ui-router": "*",
+    "lo-dash": "*",
+    "misc-js": "git://github.com/chbrown/misc-js.git",
+    "ng-storage": "*"
+  }
+}
